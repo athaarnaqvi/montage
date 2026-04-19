@@ -467,15 +467,22 @@ def _compose_scene(scene_id, dialogue, characters, audio_files,
     for fi in range(total_frames):
         t_sec = fi / FPS
 
-        # Find active timeline entry
         active = None
         for entry in timeline:
             if entry["frame_start"] <= fi < entry["frame_end"]:
                 active = entry
                 break
-        if active is None:
-            active = timeline[-1]   # last entry covers any remainder
 
+        # FIX: if not found, pick closest previous entry
+        if active is None:
+            for entry in reversed(timeline):
+                if fi >= entry["frame_start"]:
+                    active = entry
+                    break
+
+        # Absolute fallback
+        if active is None:
+            active = timeline[0]
         # Speaking character index
         speaker_name = active["speaker"]
         speaking_ci  = char_index.get(speaker_name, 0)
@@ -483,8 +490,12 @@ def _compose_scene(scene_id, dialogue, characters, audio_files,
         # Amplitude for this frame (relative position within the entry)
         amps    = active.get("amps", np.array([]))
         local_f = fi - active["frame_start"]
-        amp     = float(amps[local_f]) if local_f < len(amps) else 0.0
 
+        # FIX: prevent negative or overflow indexing
+        if local_f < 0 or local_f >= len(amps):
+            amp = 0.0
+        else:
+            amp = float(amps[local_f])
         # Subtitle = "Speaker: line"
         subtitle = f'{active["speaker"]}: "{active["text"]}"'
 
