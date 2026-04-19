@@ -1,0 +1,12 @@
+__pycache__/
+.env
+venv/
+
+*.pyc
+*.pyo
+face_swapped/
+frames/
+images/
+raw_scenes/
+audio/
+

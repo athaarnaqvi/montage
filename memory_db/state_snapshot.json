@@ -1,0 +1,20 @@
+{
+  "stage": "lip_sync_complete",
+  "final_scenes": [
+    {
+      "scene_id": 1,
+      "output_path": "outputs/raw_scenes/scene_01.mp4",
+      "sync_score": 0.0
+    },
+    {
+      "scene_id": 2,
+      "output_path": "outputs/raw_scenes/scene_02.mp4",
+      "sync_score": 0.0
+    },
+    {
+      "scene_id": 3,
+      "output_path": "outputs/raw_scenes/scene_03.mp4",
+      "sync_score": 0.0
+    }
+  ]
+}

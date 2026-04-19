@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {"name":"generate_script_segment","type":"script","api":"grok"},
+    {"name":"commit_memory","type":"memory","api":"memory_commit"},
+    {"name":"generate_image","type":"image","api":"pollinations"},
+    {"name":"get_task_graph","type":"task_graph","api":"task_graph"},
+    {"name":"voice_cloning_synthesizer","type":"audio","api":"voice_synth"},
+    {"name":"merge_scene_audio","type":"audio","api":"merge_audio"},
+    {"name":"query_stock_footage","type":"video","api":"stock_footage"},
+    {"name":"face_swapper","type":"video","api":"face_swap"},
+    {"name":"identity_validator","type":"validation","api":"identity_validate"},
+    {"name":"lip_sync_aligner","type":"audio_video","api":"lip_sync"}
+  ]
+}

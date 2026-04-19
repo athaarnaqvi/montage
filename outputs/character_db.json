@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Robot Guardian",
+    "traits": [
+      "loyal",
+      "protective",
+      "intelligent"
+    ],
+    "appearance": "The Robot Guardian stands at an impressive height of 6 feet 5 inches, with a metallic body made of interlocking silver plates and glowing blue circuits that pulse with energy. Its face is a sleek, angular design with a sharp jawline and piercing red optics. A pair of powerful mechanical arms protrude from its shoulders, each ending in sharp, hook-like claws.",
+    "style": "cyberpunk with a mix of industrial and futuristic elements, think neon lights and dark metallic tones"
+  },
+  {
+    "name": "Human Child",
+    "traits": [
+      "curious",
+      "adventurous",
+      "playful"
+    ],
+    "appearance": "The Human Child has a small, rounded face with a smattering of light freckles across the bridge of their nose, bright blue eyes that sparkle with mischief, and a mop of messy brown hair that always seems to be sticking up in every direction. Their smile is wide and infectious, and their small body is always in motion, as if they are bursting with energy. They have a few scrapes and scuffs on their knees from countless hours of playtime.",
+    "style": "whimsical watercolor with bold lines and vibrant colors"
+  },
+  {
+    "name": "Malfunctioning Robot",
+    "traits": [
+      "erratic",
+      "unpredictable",
+      "vulnerable"
+    ],
+    "appearance": "The Malfunctioning Robot has a metallic body with exposed wires and broken limbs, its once shiny surface now dulled and scratched. Its bright, glowing blue eyes flicker with an otherworldly energy, and a small, cracked screen on its chest displays distorted, glitching images. A tangle of frayed cords and wires spills out from its back, giving it a haphazard, piecemeal appearance.",
+    "style": "a gritty, dystopian cyberpunk aesthetic with bold lines, muted colors, and a focus on industrial textures"
+  }
+]
