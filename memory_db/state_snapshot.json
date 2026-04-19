@@ -1,20 +1,54 @@
 {
-  "stage": "lip_sync_complete",
-  "final_scenes": [
+  "stage": "face_swap",
+  "face_swapped_outputs": [
     {
       "scene_id": 1,
-      "output_path": "outputs/raw_scenes/scene_01.mp4",
-      "sync_score": 0.0
+      "source_video": "outputs/raw_scenes/scene_01_raw.mp4",
+      "swapped_frames": [
+        {
+          "character": "Robot Guardian",
+          "output_path": "outputs/face_swapped/scene_01/Robot_Guardian.mp4"
+        },
+        {
+          "character": "Human Child",
+          "output_path": "outputs/face_swapped/scene_01/Human_Child.mp4"
+        }
+      ],
+      "identity_valid": true
     },
     {
       "scene_id": 2,
-      "output_path": "outputs/raw_scenes/scene_02.mp4",
-      "sync_score": 0.0
+      "source_video": "outputs/raw_scenes/scene_02_raw.mp4",
+      "swapped_frames": [
+        {
+          "character": "Robot Guardian",
+          "output_path": "outputs/face_swapped/scene_02/Robot_Guardian.mp4"
+        },
+        {
+          "character": "Human Child",
+          "output_path": "outputs/face_swapped/scene_02/Human_Child.mp4"
+        },
+        {
+          "character": "Malfunctioning Robot",
+          "output_path": "outputs/face_swapped/scene_02/Malfunctioning_Robot.mp4"
+        }
+      ],
+      "identity_valid": true
     },
     {
       "scene_id": 3,
-      "output_path": "outputs/raw_scenes/scene_03.mp4",
-      "sync_score": 0.0
+      "source_video": "outputs/raw_scenes/scene_03_raw.mp4",
+      "swapped_frames": [
+        {
+          "character": "Robot Guardian",
+          "output_path": "outputs/face_swapped/scene_03/Robot_Guardian.mp4"
+        },
+        {
+          "character": "Human Child",
+          "output_path": "outputs/face_swapped/scene_03/Human_Child.mp4"
+        }
+      ],
+      "identity_valid": true
     }
   ]
 }
